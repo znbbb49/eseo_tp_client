@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>TP_ESEO_CLIENT</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+
+    <servlet>
+    <servlet-name>Accueil</servlet-name>
+    <servlet-class>src.com.servlets.Accueil</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Accueil</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>DistanceVilles</servlet-name>
+    <servlet-class>src.com.servlets.DistanceVilles</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DistanceVilles</servlet-name>
+    <url-pattern>/distance</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+    <servlet-name>AfficherVille</servlet-name>
+    <servlet-class>src.com.servlets.AfficherVille</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AfficherVille</servlet-name>
+    <url-pattern>/afficheVille</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+    <servlet-name>ModifierVille</servlet-name>
+    <servlet-class>src.com.servlets.ModifierVille</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ModifierVille</servlet-name>
+    <url-pattern>/modifierVille</url-pattern>
+  </servlet-mapping>
+  
+        <servlet>
+    <servlet-name>AjouterVille</servlet-name>
+    <servlet-class>src.com.servlets.AjouterVille</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AjouterVille</servlet-name>
+    <url-pattern>/ajouterVille</url-pattern>
+  </servlet-mapping>
+  
+          <servlet>
+    <servlet-name>SupprimerVille</servlet-name>
+    <servlet-class>src.com.servlets.SupprimerVille</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SupprimerVille</servlet-name>
+    <url-pattern>/supprimerVille</url-pattern>
+  </servlet-mapping>
+  
+        <jsp-config>
+        <jsp-property-group>
+            <url-pattern>*.jsp</url-pattern>
+            <include-prelude>/WEB-INF/taglibs.jsp</include-prelude>
+        </jsp-property-group>
+    </jsp-config>
+</web-app>
